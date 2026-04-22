@@ -1,1 +1,12 @@
 node_modules
+
+# Generated detections
+backend/detections/
+
+# Dataset archives
+backend/*.zip
+
+# Downloadable pretrained YOLO weights
+backend/yolov8*.pt
+backend/models/yolov8*.pt
+.env
