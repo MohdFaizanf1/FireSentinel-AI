@@ -47,9 +47,11 @@ log.info("Working directory: %s", os.getcwd())
 #  Config
 # ─────────────────────────────────────────────────────────
 MODEL_BASE  = 'yolov8s.pt'
-EPOCHS      = 200
-IMG_SIZE    = 1080
-BATCH_SIZE  = 32
+MODEL_BASE = 'yolov8s.pt'
+EPOCHS = 100
+IMG_SIZE = 640
+BATCH_SIZE = 16
+
 OUTPUT_NAME = 'fire_v2'
 DATASET_DIR = 'data'
 
