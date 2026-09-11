@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #080B10;
+    color: #F0E6D3;
+    font-family: 'Barlow', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: #0D1117; }
+  ::-webkit-scrollbar-thumb { background: rgba(255,107,0,0.3); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(255,107,0,0.5); }
+}
+
+@layer utilities {
+  .text-fire-red    { color: #FF2D00; }
+  .text-fire-orange { color: #FF6B00; }
+  .text-fire-amber  { color: #FFA500; }
+  .text-fire-yellow { color: #FFD700; }
+  .text-muted       { color: #7A8A99; }
+
+  .glow-red    { text-shadow: 0 0 20px rgba(255,45,0,0.6); }
+  .glow-orange { text-shadow: 0 0 20px rgba(255,107,0,0.5); }
+  .glow-green  { text-shadow: 0 0 20px rgba(0,255,136,0.4); }
+
+  .card {
+    background: #0D1117;
+    border: 1px solid rgba(255,107,0,0.2);
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .card-hot {
+    border-color: rgba(255,45,0,0.5);
+    box-shadow: 0 0 30px rgba(255,45,0,0.1);
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(255,107,0,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,107,0,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .font-display { font-family: 'Rajdhani', sans-serif; }
+  .font-mono    { font-family: 'Share Tech Mono', monospace; }
+}
+
+/* Fire alert pulse animation */
+@keyframes alert-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 45, 0, 0.4); }
+  50%       { box-shadow: 0 0 0 12px rgba(255, 45, 0, 0); }
+}
+.alert-pulse { animation: alert-pulse 1s ease-in-out infinite; }
+
+/* Scan line effect */
+@keyframes scan {
+  0%   { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+.scan-line {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255,107,0,0.08), transparent);
+  animation: scan 8s linear infinite;
+  pointer-events: none;
+  z-index: 9999;
+}

@@ -1,0 +1,7 @@
+path: /Users/azamshaikh/Developer/FireShield-AI/backend/data
+train: train/images
+val: valid/images
+nc: 1
+names:
+- fire
+test: test/images
