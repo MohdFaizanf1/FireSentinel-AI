@@ -1,5 +1,5 @@
 # ============================================
-# FireShield-AI Big Data Pipeline using PySpark
+#FireSentinel-AI Big Data Pipeline using PySpark
 # Apache Spark Full Code
 # Purpose:
 # - Load multiple fire datasets
@@ -19,7 +19,7 @@ import os
 # ============================================
 
 spark = SparkSession.builder \
-    .appName("FireShield-AI Data Pipeline") \
+    .appName("FireSentinel-AI Data Pipeline") \
     .master("local[*]") \
     .getOrCreate()
 

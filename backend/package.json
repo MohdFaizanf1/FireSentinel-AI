@@ -1,7 +1,7 @@
 {
-  "name": "fireshield-backend",
+  "name": "FireSentinel-backend",
   "version": "1.0.0",
-  "description": "FireShield AI backend — Express + Socket.io + Google OAuth",
+  "description": "FireSentinel AI backend — Express + Socket.io + Google OAuth",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

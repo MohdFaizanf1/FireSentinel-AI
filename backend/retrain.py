@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-FireShield AI — retrain.py
+FireSentinel AI — retrain.py
 
 FIXES vs previous version:
   1. data.yaml uses relative path '.' — absolute path broke on other machines
@@ -38,7 +38,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="  %(levelname)-8s %(message)s",
 )
-log = logging.getLogger("fireshield")
+log = logging.getLogger("FireSentinel")
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 log.info("Working directory: %s", os.getcwd())
@@ -51,7 +51,9 @@ MODEL_BASE = 'yolov8s.pt'
 EPOCHS = 100
 IMG_SIZE = 640
 BATCH_SIZE = 16
+OUTPUT_NAME = 'fire_v2'
 
+DATASET_DIR = 'data'(Rebrand to FireSentinel AI and update fire detection system)
 OUTPUT_NAME = 'fire_v2'
 DATASET_DIR = 'data'
 
@@ -765,13 +767,13 @@ class FireTracker:
 #  Main
 # ─────────────────────────────────────────────────────────
 def main():
-    parser = argparse.ArgumentParser(description='FireShield AI — model retrainer')
+    parser = argparse.ArgumentParser(description='FireSentinel AI — model retrainer')
     parser.add_argument('--yes', '-y', action='store_true',
                         help='Skip confirmation prompts')
     args = parser.parse_args()
 
     print()
-    print("  FireShield AI — Model Retrainer")
+    print("FireSentinel AI — Model Retrainer")
     print()
 
     missing = []

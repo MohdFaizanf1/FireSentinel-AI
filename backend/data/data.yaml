@@ -1,7 +1,8 @@
-path: /Users/azamshaikh/Developer/FireShield-AI/backend/data
+path: /Users/faizan/Main Projects/FireSentinel-AI/backend/data
 train: train/images
 val: valid/images
+test: test/images
+
 nc: 1
 names:
-- fire
-test: test/images
+  - fire

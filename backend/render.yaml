@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: fireshield-backend
+    name: FireSentinel-backend
     env: node
     buildCommand: npm install
     startCommand: node server.js

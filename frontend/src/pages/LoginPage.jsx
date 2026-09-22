@@ -48,8 +48,7 @@ export default function LoginPage() {
             🔥
           </motion.div>
           <h1 className="font-display text-4xl font-bold text-white tracking-wider">
-            FIRESHIELD <span className="text-fire-orange">AI</span>
-          </h1>
+              FIRESENTINEL <span className="text-fire-orange">AI</span>          </h1>
           <p className="font-mono text-xs text-muted tracking-[4px] uppercase mt-2">
             Real-Time Fire Detection System
           </p>

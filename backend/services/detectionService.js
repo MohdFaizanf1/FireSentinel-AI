@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────
-//  FireShield AI — detectionService.js  (PRODUCTION FIXED)
+// FireSentinel AI — detectionService.js  (PRODUCTION FIXED)
 //
 //  FIXES vs previous version:
 //  1. total_detections counts fire *events* not frames

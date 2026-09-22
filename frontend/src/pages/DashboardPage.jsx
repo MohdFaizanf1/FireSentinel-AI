@@ -67,7 +67,7 @@ export default function DashboardPage() {
             🔥
           </motion.div>
           <div>
-            <div className="font-display font-bold text-white tracking-wide leading-tight">FireShield AI</div>
+            <div className="font-display font-bold text-white tracking-wide leading-tight">FireSentinel AI</div>
             <div className="font-mono text-xs text-muted tracking-widest">v2.0 SAAS</div>
           </div>
         </div>

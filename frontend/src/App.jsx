@@ -18,7 +18,7 @@ function Loading() {
       <div className="text-center">
         <div className="text-4xl mb-4">🔥</div>
         <div className="font-display text-fire-orange text-xl tracking-widest animate-pulse">
-          FIRESHIELD AI
+          FireSentinel AI
         </div>
       </div>
     </div>

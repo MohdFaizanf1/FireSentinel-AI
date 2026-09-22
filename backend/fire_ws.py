@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-FireShield AI — fire_ws.py
+FireSentinel AI — fire_ws.py
 
 FIXES vs previous version:
   1. CONFIDENCE_THRESHOLD lowered to 0.55 — was 0.85, too strict for real fire
@@ -131,9 +131,9 @@ def send_email_notification():
         msg            = MIMEMultipart()
         msg['From']    = SENDER_EMAIL
         msg['To']      = RECEIVER_EMAIL
-        msg['Subject'] = "FireShield Alert: Fire Detected"
+        msg['Subject'] = "FireSentinel Alert: Fire Detected"
         current_time   = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        body = f"FIRE HAS BEEN DETECTED\n\nTime: {current_time}\n\nFireShield AI automated alert."
+        body = f"FIRE HAS BEEN DETECTED\n\nTime: {current_time}\n\nFireSentinel AI automated alert."
         msg.attach(MIMEText(body, 'plain'))
         context = ssl.create_default_context()
         with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT, context=context) as server:

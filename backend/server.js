@@ -1,9 +1,9 @@
 // ─────────────────────────────────────────────────────────
-//  FireShield AI — server.js  (PRODUCTION FIXED)
+//  FireSentinel AI— server.js  (PRODUCTION FIXED)
 //
 //  FIXES vs previous version:
 //  1. SESSION_SECRET — crashes on startup if missing from .env
-//     (was silently using hardcoded 'fireshield_secret' — security risk)
+//     (was silently using hardcoded 'FireSentinel' — security risk)
 //  2. Rate limiting added on all /api routes
 //  3. Socket 'connection' handler now sends boxes + gallery count
 //     as the comment promised but the code didn't do
@@ -141,7 +141,7 @@ io.on('connection', (socket) => {
 // ── Start server ─────────────────────────────────────────
 const PORT = process.env.PORT || 4000;
 server.listen(PORT, async () => {
-  console.log(`\nFireShield AI Backend — port ${PORT}`);
+  console.log(`\nFireSentinel AI Backend — port ${PORT}`);
   console.log(`   Frontend : ${process.env.FRONTEND_URL || 'http://localhost:5173'}`);
   console.log(`   Env      : ${process.env.NODE_ENV || 'development'}`);
 

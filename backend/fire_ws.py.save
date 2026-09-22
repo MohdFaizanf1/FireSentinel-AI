@@ -1,4 +1,4 @@
-cd ~/Developer/FireShield-AI/backend
+cd ~/Developer/FireSentinel-AI/backend
 
 python3 - << 'PYEOF'
 with open('fire_ws.py', 'w') as f:
@@ -73,7 +73,7 @@ def send_email():
         msg = MIMEMultipart()
         msg["From"]    = SENDER_EMAIL
         msg["To"]      = RECEIVER_EMAIL
-        msg["Subject"] = "FireShield AI — Fire Detected!"
+        msg["Subject"] = "FireSentinel AI — Fire Detected!"
         msg.attach(MIMEText(f\'Fire detected at {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}\', "plain"))
         ctx = ssl.create_default_context()
         with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=ctx) as s:

@@ -1,11 +1,11 @@
-# 🔥 FireShield AI — Fullstack Fire Detection System
+# 🔥 FireSentinel AI — Fullstack Fire Detection System
 
 Real-time fire detection SaaS with YOLOv8, WebSockets, Google OAuth, and a dark futuristic dashboard.
 
 ## Architecture
 
 ```
-FireShield-AI/
+FireSentinel-AI/
 ├── frontend/          React + Vite + Tailwind + Framer Motion
 ├── backend/           Node.js + Express + Socket.io
 │   └── fire.py        Python YOLOv8 detection (spawned as child process)
