@@ -100,3 +100,4 @@ npm run build
 - 📥 CSV log export
 - 🖼️ Screenshot gallery
 - 🧠 AI Insights panel
+# FireSentinel-AI
